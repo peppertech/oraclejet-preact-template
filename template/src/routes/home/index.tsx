@@ -7,8 +7,16 @@ const Home = () => {
 			<a href="https://preactjs.com">
 				<img src="../../assets/preact-logo.svg" alt="Preact Logo" height="160" width="160" />
 			</a>
-			<h1>Get Started Building PWAs with Preact-CLI</h1>
+			<a href="https://oracle.com/jet">
+				<img src="../../assets/oraclejet-logo.svg" alt="Oracle JET Logo" height="160" width="160" />
+			</a>
+			<h1>Get Started Building Preact with Oracle JavaScript Extension Toolkit(JET)</h1>
 			<section>
+			<Resource
+					title="Learn Oracle JET"
+					description="Learn more about Oracle JavaScript Extension Toolkit(JET) and the oraclejet-preact offering"
+					link="https://oracle.com/jet/"
+				/>
 				<Resource
 					title="Learn Preact"
 					description="If you're new to Preact, try the interactive tutorial to learn important concepts"
@@ -29,7 +37,13 @@ const Home = () => {
 	);
 };
 
-const Resource = props => {
+interface ResourceProps {
+	title: string;
+	description: string;
+	link: string;
+}
+
+const Resource = (props: ResourceProps) => {
 	return (
 		<a href={props.link} class={style.resource}>
 			<h2>{props.title}</h2>
