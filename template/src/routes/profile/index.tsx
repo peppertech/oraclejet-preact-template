@@ -25,7 +25,7 @@ const Profile = ({ user }: Props) => {
 
       <p>
         <Button
-          variant="callToAction"
+          variant="outlined"
           label="Click me"
           onAction={() => setCount((count) => count + 1)}
         />{" "}

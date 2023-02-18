@@ -9,7 +9,7 @@
 	background: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
 		color: #fff;
 		background: #1c1c1c;
