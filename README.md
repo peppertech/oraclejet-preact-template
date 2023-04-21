@@ -10,7 +10,7 @@
 ## Usage
 
 ```bash
-$ npx preact-cli create typescript my-project
+$ npx preact-cli create peppertech/oraclejet-preact-template my-project
 $ cd my-project
 $ npm install
 $ npm run dev
